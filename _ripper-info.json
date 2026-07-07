@@ -1,0 +1,22 @@
+{
+    "source": "https://silkroad-savvy.lovable.app/",
+    "rippedAt": "2026-06-25T17:21:08+00:00",
+    "files": [
+        "index.html",
+        "assets/styles-CRl-EAQb.css",
+        "assets/index--Jxcx3Mr.js",
+        "assets/routes-DG8hy4bd.js",
+        "assets/guide-mockup-DTUNPjG0.png",
+        "_external/pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/122d4c9c-c1b7-4fd5-85f8-17393374c804/id-preview-f45f489a--6c2c5dd6-7c59-42ba-9f03-bb6836cd7a43.lovable.app-1782402423282.png"
+    ],
+    "errors": [
+        "https://fonts.googleapis.com/css2?family=Fraunces:opsz: HTTP 400",
+        "https://silkroad-savvy.lovable.app/wght@9..144: HTTP 404",
+        "https://silkroad-savvy.lovable.app/500;9..144: HTTP 404",
+        "https://silkroad-savvy.lovable.app/600;9..144: HTTP 404",
+        "https://silkroad-savvy.lovable.app/700;9..144: HTTP 404",
+        "https://silkroad-savvy.lovable.app/800&family=Inter:wght@400;500;600;700&display=swap: HTTP 404",
+        "https://fonts.googleapis.com/: HTTP 404",
+        "https://fonts.gstatic.com/: HTTP 404"
+    ]
+}
