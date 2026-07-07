@@ -713,6 +713,7 @@
   }
 
   function shouldOpenLeadModal(element) {
+    if (element.closest && element.closest('#lead-capture-modal')) return false;
     const text = (element.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
     const href = (element.getAttribute('href') || '').trim().toLowerCase();
     const targetTexts = [
