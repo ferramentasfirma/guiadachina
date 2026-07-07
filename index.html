@@ -573,8 +573,8 @@
           <p class="lead-security">Seus dados estão seguros. Não compartilhamos com terceiros.</p>
         </form>
         <div class="lead-success">
-          <h3>Cadastro recebido!</h3>
-          <p>Agora você está a um passo de acessar o roteiro. Vamos te direcionar para o WhatsApp.</p>
+          <h3>Mensagem recebida!</h3>
+          <p>Recebemos seus dados com sucesso. Em breve entraremos em contato com o passo a passo completo da viagem à China.</p>
         </div>
       </div>
     `;
@@ -699,10 +699,12 @@
       await window.handleLeadSubmit(leadData);
       const modal = document.getElementById('lead-capture-modal');
       modal.querySelector('.lead-modal').classList.add('is-success');
-      setTimeout(function () {
-        const whatsappUrl = `https://wa.me/${WHATSAPP_DESTINO}?text=${encodeURIComponent(WHATSAPP_MENSAGEM)}`;
-        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-      }, 1000);
+      if (WHATSAPP_DESTINO && WHATSAPP_DESTINO !== 'INSERIR_NUMERO_AQUI') {
+        setTimeout(function () {
+          const whatsappUrl = `https://wa.me/${WHATSAPP_DESTINO}?text=${encodeURIComponent(WHATSAPP_MENSAGEM)}`;
+          window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        }, 1000);
+      }
     } catch (error) {
       setError('whatsapp', 'Não foi possível enviar agora. Tente novamente em instantes.');
       button.disabled = false;
